@@ -6,25 +6,42 @@ Example:
     Present/Future value | 89.21
     Different calculator for crypto price
 
-Once enter in values enter in # of shares to be compared
+Once enter in values enter in # / quanity of crypto of shares to be compared
 """
+
+def stockCalc():
+    while True:
+        try:
+            firstVal = float(input("first value: "))
+            secondVal = float(input("second value: "))
+            shareAmount = int(input("enter # of shares (whole number): "))
+            break
+        except ValueError:
+            print("not a number, try again")
+            continue
+
+    print('\n{} {} {} {} {}'.format(shareAmount,"shares at",firstVal,"equal",round(shareAmount*firstVal,2)))
+    print('\n{} {} {} {} {}'.format(shareAmount,"shares at",secondVal,"equal",round(shareAmount*secondVal,2)))
+
+def cryptoCalc():
+    while True:
+        try:
+
+        except ValueError:
+            print("not a number, try again")
 
 def main():
 
-    print("""
-    1. Stock Comparator
-    2. Crypto Comparator
-    """)
+    print('\n{}\n{}'.format("1. Stock Comparator","2. Crypto Comparator"))
+    StockOrCrypto = int(input("Choice: "))
 
-    print('{}\n{}'.format("1. Stock Comparator","2. Crypto Comparator"))
+    if StockOrCrypto == 1:
+        print("\nStock Comparator Chosen")
+        stockCalc()
 
-    StockOrCrpyto = int(input("Choice:"))
-
-    if StockOrCrpyto == 1:
-        print("Stock Comparator Chosen")
-        pastVal = int(input("Please enter past stock value"))
-    elif StockOrCrpyto == 2:
+    elif StockOrCrypto == 2:
         print("Crypto Comparator Chosen")
+        cryptoCalc()
 
 
 
