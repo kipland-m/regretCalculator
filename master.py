@@ -3,8 +3,8 @@
 # Simple Stock price and Crypto price comparator
 
 def productPrint(typeAmount,firstVal,secondVal):
-    print('\n{} shares at {} equal {}'.format(typeAmount,firstVal,round(typeAmount*firstVal,2)))
-    print('\n{} shares at {} equal {}'.format(typeAmount,secondVal,round(typeAmount*secondVal,2)))
+    print('\n{} shares/coins at {} equal {}'.format(typeAmount,firstVal,round(typeAmount*firstVal,2)))
+    print('\n{} shares/coins at {} equal {}'.format(typeAmount,secondVal,round(typeAmount*secondVal,2)))
 
 def stockCalc():
     while True:
