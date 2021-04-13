@@ -1,8 +1,24 @@
-Takes one stock price and compares # of shares to current stock price
-Example:
 
-    Past value | 131.24
-    Present/Future value | 89.21
-    Different calculator for crypto price
+First Version
+    Terminal Implementation
+        Takes two prices and compares # of shares (or coins, float value is valid)
+        Very basic error checking
+        Rough prototype
 
-Once enter in values enter in # / quanity of crypto of shares to be compared
+Second Verison
+    Basic GUI Implementation
+        Same function as terminal application, 3 text boxes for input 
+        [Price] [Price] [Amount]
+
+
+Example of use:
+
+    First value | 131.24
+    Second value | 89.21
+    # of shares/coins | 40
+
+    40 shares/coins at 131.24 equal 5249.6
+    40 shares/coins at 89.21 equal 3568.4
+
+
+
