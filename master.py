@@ -1,13 +1,10 @@
-"""
-Takes one stock price and compares # of shares to current stock price
-Example:
+# Kipland Melton
+# 04/12/2021
+# Simple Stock price and Crypto price comparator
 
-    Past value | 131.24
-    Present/Future value | 89.21
-    Different calculator for crypto price
-
-Once enter in values enter in # / quanity of crypto of shares to be compared
-"""
+def productPrint(typeAmount,firstVal,secondVal):
+    print('\n{} {} {} {} {}'.format(typeAmount,"shares at",firstVal,"equal",round(typeAmount*firstVal,2)))
+    print('\n{} {} {} {} {}'.format(typeAmount,"shares at",secondVal,"equal",round(typeAmount*secondVal,2)))
 
 def stockCalc():
     while True:
@@ -20,8 +17,7 @@ def stockCalc():
             print("not a number, try again")
             continue
 
-    print('\n{} {} {} {} {}'.format(shareAmount,"shares at",firstVal,"equal",round(shareAmount*firstVal,2)))
-    print('\n{} {} {} {} {}'.format(shareAmount,"shares at",secondVal,"equal",round(shareAmount*secondVal,2)))
+    productPrint(shareAmount,firstVal,secondVal)
 
 def cryptoCalc():
     while True:
@@ -34,8 +30,7 @@ def cryptoCalc():
             print("not a number, try again")
             continue
 
-    print('\n{} {} {} {} {}'.format(coinAmount,"at",firstVal,"equal",round(coinAmount*firstVal,2)))
-    print('\n{} {} {} {} {}'.format(coinAmount,"at",secondVal,"equal",round(coinAmount*secondVal,2)))
+    productPrint(coinAmount,firstVal,secondVal)
 
 def main():
 
@@ -49,9 +44,6 @@ def main():
     elif StockOrCrypto == 2:
         print("\nCrypto Comparator Chosen")
         cryptoCalc()
-
-
-
 
 if __name__ == '__main__':
     main()
