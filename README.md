@@ -1,14 +1,18 @@
 
 First Version
+
     Terminal Implementation
-        Takes two prices and compares # of shares (or coins, float value is valid)
-        Very basic error checking
-        Rough prototype
+    
+    Takes two prices and compares # of shares (or coins, float value is valid)
+    Very basic error checking
+    Rough prototype
 
 Second Verison
+
     Basic GUI Implementation
-        Same function as terminal application, 3 text boxes for input 
-        [Price] [Price] [Amount]
+
+    Same function as terminal application, 3 text boxes for input 
+    [Price] [Price] [Amount]
 
 
 Example of use:
