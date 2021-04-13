@@ -2,7 +2,7 @@
 First Version
 
     Terminal Implementation
-    
+
     Takes two prices and compares # of shares (or coins, float value is valid)
     Very basic error checking
     Rough prototype
@@ -12,8 +12,8 @@ Second Verison
     Basic GUI Implementation
 
     Same function as terminal application, 3 text boxes for input 
-    [Price] [Price] [Amount]
-
+    [131.24] [89.21] [40]
+    -----(Calculate)-----
 
 Example of use:
 
