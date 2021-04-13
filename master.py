@@ -26,9 +26,16 @@ def stockCalc():
 def cryptoCalc():
     while True:
         try:
-
+            firstVal = float(input("first value: "))
+            secondVal = float(input("second value: "))
+            coinAmount = float(input("enter # of coins: "))
+            break
         except ValueError:
             print("not a number, try again")
+            continue
+
+    print('\n{} {} {} {} {}'.format(coinAmount,"at",firstVal,"equal",round(coinAmount*firstVal,2)))
+    print('\n{} {} {} {} {}'.format(coinAmount,"at",secondVal,"equal",round(coinAmount*secondVal,2)))
 
 def main():
 
@@ -40,7 +47,7 @@ def main():
         stockCalc()
 
     elif StockOrCrypto == 2:
-        print("Crypto Comparator Chosen")
+        print("\nCrypto Comparator Chosen")
         cryptoCalc()
 
 
