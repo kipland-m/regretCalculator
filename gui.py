@@ -4,19 +4,31 @@
 # Kipland Melton
 
 import sys
-from PyQt5.QtWidgets import QApplication, QLabel
+import PyQt5.QtWidgets as qtw
 
-class Window():
-
+# Widgets go here
+class MainWindow(qtw.QWidget):
     def __init__(self):
         super().__init__()
-        app = QApplication([])
-        label = QLabel("test oop")
-        label.show()
-        app.exec_()
 
+        self.setWindowTitle("regretCalculator")
+        self.setLayout(qtw.QVBoxLayout())
+        
+    def calc(self):
+
+        value_entry1 = qtw.QLineEdit()
+        value_entry2 = qtw.QLineEdit()
+        stock_amount = qtw.QLineEdit()
+
+        btn_calculate = QPushButton('Calculate')
+
+        self.layout().addWidget(btn1)
+
+        self.show()
 
 if __name__ == "__main__":
-    Window()
+    app = qtw.QApplication([])
+    mw = MainWindow()
+    app.exec_()
 
 
